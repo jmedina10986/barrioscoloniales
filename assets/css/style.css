@@ -1798,3 +1798,7 @@ section {
   text-align: center;
   font-size: 13px;
 }
+
+.php-email-form input {
+background-color:#ffff !important;
+}
