@@ -272,7 +272,7 @@
       subject: $("#subject-contact").val()
     }
     console.log(data)
-    axios.post("https://9vazg3hb0f.execute-api.us-east-1.amazonaws.com/production/", data)
+    axios.post("https://eb46xyi2sd.execute-api.us-east-1.amazonaws.com/production/", data)
     .then(response => {
       $(".sent-message").show();
     })
