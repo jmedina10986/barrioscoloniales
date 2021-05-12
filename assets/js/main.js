@@ -265,11 +265,11 @@
   });
 
   $("#sendMail").click(()=> {
-    const message = `${$("#message-form").val()} name: ${$("#name-form").val()}`
+    const message = `${$("#message-contact").val()} name: ${$("#name-contact").val()}`
     const data = { 
-      email: $("#email-form").val(),
+      email: $("#email-contact").val(),
       message: message,
-      subject: $("#subject-form").val()
+      subject: $("#subject-contact").val()
     }
     console.log(data)
     axios.post("https://9vazg3hb0f.execute-api.us-east-1.amazonaws.com/production/", data)
