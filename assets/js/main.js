@@ -265,6 +265,7 @@
   });
 
   $("#sendMail").click(()=> {
+    if ($("#message-contact").val() && $("#name-contact").val() && $("#email-contact").val()) {
     const message = `${$("#message-contact").val()} name: ${$("#name-contact").val()}`
     const data = { 
       email: $("#email-contact").val(),
@@ -275,7 +276,13 @@
     axios.post("https://eb46xyi2sd.execute-api.us-east-1.amazonaws.com/production/", data)
     .then(response => {
       $(".sent-message").show();
+      $("#message-contact").val('');
+      $("#subject-contact").val('');
+      $("#email-contact").val('');
+      $("#name-contact").val('');
+      setInterval(function(){ location.reload(); }, 4500);
     })
     .catch(error => console.log(error));
+  }
   })
 })()
