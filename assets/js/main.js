@@ -266,7 +266,7 @@
 
   $("#sendMail").click(()=> {
     if ($("#message-contact").val() && $("#name-contact").val() && $("#email-contact").val()) {
-    const message = `${$("#message-contact").val()} name: ${$("#name-contact").val()}`
+    const message = `${$("#message-contact").val()} name: ${$("#name-contact").val()} email: ${$("#email-contact").val()}`
     const data = { 
       email: $("#email-contact").val(),
       message: message,
