@@ -1000,6 +1000,7 @@ section {
   text-align: center;
   padding: 15px;
   font-weight: 600;
+  transition: all 1s ease;
 }
 
 .appointment .php-email-form .loading {
