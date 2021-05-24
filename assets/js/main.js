@@ -266,7 +266,7 @@
 
   $("#sendMail").click(()=> {
     if ($("#message-contact").val() && $("#name-contact").val() && $("#email-contact").val()) {
-    const message = `${$("#message-contact").val()} name: ${$("#name-contact").val()} email: ${$("#email-contact").val()}`
+    const message = `${$("#message-contact").val()}/n name: ${$("#name-contact").val()}/n email: ${$("#email-contact").val()}/n phone: ${$("#phone-contact").val()}/n`
     const data = { 
       email: $("#email-contact").val(),
       message: message,
@@ -280,6 +280,7 @@
       $("#subject-contact").val('');
       $("#email-contact").val('');
       $("#name-contact").val('');
+      $("#phone-contact").val('');
       setInterval(function(){ location.reload(); }, 4500);
     })
     .catch(error => console.log(error));
