@@ -269,7 +269,8 @@
     const message = `name: ${$("#name-contact").val()}<br/>
       email: ${$("#email-contact").val()}<br/>
       phone: ${$("#phone-contact").val()}<br/>
-      message: ${$("#message-contact").val()}<br/>`
+      message: ${$("#message-contact").val()}<br/>`;
+      
     const data = { 
       email: $("#email-contact").val(),
       message: message,
