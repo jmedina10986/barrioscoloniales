@@ -266,7 +266,10 @@
 
   $("#sendMail").click(()=> {
     if ($("#message-contact").val() && $("#name-contact").val() && $("#email-contact").val()) {
-    const message = `${$("#message-contact").val()}/n name: ${$("#name-contact").val()}/n email: ${$("#email-contact").val()}/n phone: ${$("#phone-contact").val()}/n`
+    const message = `name: ${$("#name-contact").val()}<br/>
+      email: ${$("#email-contact").val()}<br/>
+      phone: ${$("#phone-contact").val()}<br/>
+      message: ${$("#message-contact").val()}<br/>`
     const data = { 
       email: $("#email-contact").val(),
       message: message,
